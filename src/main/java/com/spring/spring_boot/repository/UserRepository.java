@@ -1,2 +1,8 @@
-package com.spring.spring_boot.repository;public interface UserRepository {
+package com.spring.spring_boot.repository;
+
+
+import com.spring.spring_boot.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
 }
